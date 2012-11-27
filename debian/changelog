@@ -1,0 +1,97 @@
+nginx (1.3.9-vgh~quantal1) quantal; urgency=low
+
+  * New upstream release
+
+ -- Vlad Ghinea <lp@vladgh.com>  Tue, 27 Nov 2012 07:34:45 -0800
+
+nginx (1.3.8-vgh~precise1) precise; urgency=low
+
+  * New upstream release
+  * New Passenger upstream release
+
+ -- Vlad Ghinea <lp@vladgh.com>  Sat, 03 Nov 2012 10:09:09 -0500
+
+nginx (1.3.7-vgh~precise1) precise; urgency=low
+
+  * New upstream release
+
+ -- Vlad Ghinea <lp@vladgh.com>  Tue, 02 Oct 2012 17:42:34 -0500
+
+nginx (1.3.6-vgh~precise1) precise; urgency=low
+
+  * New upstream release
+
+ -- Vlad Ghinea <lp@vladgh.com>  Wed, 12 Sep 2012 08:52:25 -0500
+
+nginx (1.3.5-vgh~precise2) precise; urgency=low
+
+  * New Passenger upstream release
+
+ -- Vlad Ghinea <lp@vladgh.com>  Tue, 28 Aug 2012 09:58:08 -0500
+
+nginx (1.3.5-vgh~precise1) precise; urgency=low
+
+  * New upstream release
+
+ -- Vlad Ghinea <lp@vladgh.com>  Tue, 21 Aug 2012 11:30:11 -0500
+
+nginx (1.3.4-vgh2~precise1) precise; urgency=low
+
+  * New Passenger upstream release
+
+ -- Vlad Ghinea <lp@vladgh.com>  Wed, 08 Aug 2012 10:08:36 -0500
+
+nginx (1.3.4-vgh1~precise1) precise; urgency=low
+
+  * New upstream release
+
+ -- Vlad Ghinea <lp@vladgh.com>  Tue, 31 Jul 2012 15:56:05 -0500
+
+nginx (1.3.3-vgh2~precise1) precise; urgency=low
+
+  * New Passenger upstream release
+
+ -- Vlad Ghinea <lp@vladgh.com>  Sun, 22 Jul 2012 09:43:45 -0500
+
+nginx (1.3.3-vgh1~precise1) precise; urgency=low
+
+  * New upstream release
+
+ -- Vlad Ghinea <lp@vladgh.com>  Tue, 10 Jul 2012 10:11:13 -0500
+
+nginx (1.3.2-vgh1~precise1) precise; urgency=low
+
+  * New upstream release
+
+ -- Vlad Ghinea <lp@vladgh.com>  Sun, 01 Jul 2012 09:00:21 -0500
+
+nginx (1.3.1-vgh2~precise1) precise; urgency=low
+
+  * New Passenger upstream release.
+
+ -- Vlad Ghinea <lp@vladgh.com>  Thu, 07 Jun 2012 14:18:39 -0500
+
+nginx (1.3.1-vgh1~precise1) precise; urgency=low
+
+  * New upstream release
+
+ -- Vlad Ghinea <lp@vladgh.com>  Wed, 06 Jun 2012 16:56:36 -0500
+
+nginx (1.2.0-vgh3~precise1) precise; urgency=low
+
+  * Fixed debian control file.
+
+ -- Vlad Ghinea <lp@vladgh.com>  Sun, 29 Apr 2012 20:41:16 -0500
+
+nginx (1.2.0-vgh2~precise1) precise; urgency=low
+
+  * Fixed CONFIGURE_OPTIONS.
+
+ -- Vlad Ghinea <lp@vladgh.com>  Sun, 29 Apr 2012 14:48:48 -0500
+
+nginx (1.2.0-vgh1~precise1) precise; urgency=low
+
+  * Initial Precise Release.
+
+ -- Vlad Ghinea <lp@vladgh.com>  Sun, 29 Apr 2012 14:15:14 -0500
+

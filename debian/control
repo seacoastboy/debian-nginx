@@ -1,0 +1,165 @@
+Source: nginx
+Section: httpd
+Priority: optional
+Maintainer: Vlad Ghinea <lp@vladgh.com>
+Build-Depends: debhelper (>= 8.0.0),
+    dpkg-dev (>= 1.15.5),
+    autotools-dev,
+    libexpat-dev,
+    libgd2-noxpm-dev,
+    libgeoip-dev,
+    liblua5.1-dev,
+    libmhash-dev,
+    libssl-dev,
+    libpcre3-dev,
+    libperl-dev,
+    libxslt1-dev,
+    zlib1g-dev,
+    passenger-dev (>= 3.0.18), passenger-dev (<< 3.0.19)
+Standards-Version: 3.9.3
+Homepage: http://nginx.org
+
+Package: nginx
+Architecture: all
+Depends: ${misc:Depends}, nginx-full
+Description: HTTP and reverse proxy server
+ Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
+ the open-source community. This server can be used as standalone HTTP server
+ and as a reverse proxy server before some Apache or another big server to
+ reduce load to backend servers by many concurrent HTTP-sessions.
+ .
+ This is a metapackage that installs nginx-full.
+
+Package: nginx-common
+Architecture: all
+Depends: ${misc:Depends}
+Description: Common configuration files for NginX
+ Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
+ the open-source community. This server can be used as standalone HTTP server
+ and as a reverse proxy server before some Apache or another big server to
+ reduce load to backend servers by many concurrent HTTP-sessions.
+ .
+ This package installs all the configuration files.
+
+Package: nginx-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}, lsb-base (>= 3.2-14)
+Description: This package provides extra documentation for Nginx
+ Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
+ the open-source community. This server can be used as standalone HTTP server
+ and as a reverse proxy server before some Apache or another big server to
+ reduce load to backend servers by many concurrent HTTP-sessions.
+
+Package: nginx-min
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, nginx-common (= ${source:Version})
+Provides: httpd, nginx
+Conflicts: nginx-full, nginx-passenger, nginx-passenger1.8, nginx-passenger1.9.1
+Description: Installs NginX with a minimum set of core modules
+ Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
+ the open-source community. This server can be used as standalone HTTP server
+ and as a reverse proxy server before some Apache or another big server to
+ reduce load to backend servers by many concurrent HTTP-sessions.
+ .
+ MODULES INCLUDED:
+ Standard HTTP Modules:
+   Core, Access, Auth Basic, Auto Index, Browser, Charset, Empty GIF, FastCGI,
+   Geo, Gzip, Headers, Index, Limit Requests, Limit Zone, Log, Map, Memcached,
+   Proxy, Referer, Rewrite, SCGI, Split Clients, SSI, Upstream, User ID, UWSGI,
+   X-Accel
+ Optional HTTP Modules:
+   Gzip Precompression, IPv6, RealIP, Stub Status, SSL
+
+Package: nginx-full
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, nginx-common (= ${source:Version})
+Provides: httpd, nginx
+Conflicts: nginx-min, nginx-passenger, nginx-passenger1.8, nginx-passenger1.9.1
+Description: Installs NginX with the full set of core modules
+ Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
+ the open-source community. This server can be used as standalone HTTP server
+ and as a reverse proxy server before some Apache or another big server to
+ reduce load to backend servers by many concurrent HTTP-sessions.
+ .
+ MODULES INCLUDED:
+ Standard HTTP Modules:
+   Core, Access, Auth Basic, Auto Index, Browser, Charset, Empty GIF, FastCGI,
+   Geo, Gzip, Headers, Index, Limit Requests, Limit Zone, Log, Map, Memcached,
+   Proxy, Referer, Rewrite, SCGI, Split Clients, SSI, Upstream, User ID, UWSGI,
+   X-Accel
+ Optional HTTP Modules:
+   GeoIP, FLV, Gzip Precompression, IPv6, RealIP, Stub Status, SSL, WebDAV,
+   Substitution
+
+Package: nginx-passenger
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, nginx-common (= ${source:Version}),
+  nginx-passenger1.8, passenger1.8 (>= 3.0.18), passenger1.8 (<< 3.0.19)
+Provides: httpd, nginx
+Conflicts: nginx-min, nginx-full, nginx-passenger1.9.1
+Description: Installs nginx-full with support for Passenger (default Ruby 1.8)
+ Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
+ the open-source community. This server can be used as standalone HTTP server
+ and as a reverse proxy server before some Apache or another big server to
+ reduce load to backend servers by many concurrent HTTP-sessions.
+ .
+ MODULES INCLUDED:
+ Standard HTTP Modules:
+   Core, Access, Auth Basic, Auto Index, Browser, Charset, Empty GIF, FastCGI,
+   Geo, Gzip, Headers, Index, Limit Requests, Limit Zone, Log, Map, Memcached,
+   Proxy, Referer, Rewrite, SCGI, Split Clients, SSI, Upstream, User ID, UWSGI,
+   X-Accel
+ Optional HTTP Modules:
+   GeoIP, FLV, Gzip Precompression, IPv6, RealIP, Stub Status, SSL, WebDAV,
+   Substitution
+ Third Party Modules:
+   Passenger (default 1.8)
+
+Package: nginx-passenger1.8
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, nginx-common (= ${source:Version}),
+  passenger1.8 (>= 3.0.18), passenger1.8 (<< 3.0.19)
+Provides: httpd, nginx
+Conflicts: nginx-min, nginx-full, nginx-passenger1.9.1
+Description: Installs nginx-full with support for Passenger on Ruby 1.8
+ Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
+ the open-source community. This server can be used as standalone HTTP server
+ and as a reverse proxy server before some Apache or another big server to
+ reduce load to backend servers by many concurrent HTTP-sessions.
+ .
+ MODULES INCLUDED:
+ Standard HTTP Modules:
+   Core, Access, Auth Basic, Auto Index, Browser, Charset, Empty GIF, FastCGI,
+   Geo, Gzip, Headers, Index, Limit Requests, Limit Zone, Log, Map, Memcached,
+   Proxy, Referer, Rewrite, SCGI, Split Clients, SSI, Upstream, User ID, UWSGI,
+   X-Accel
+ Optional HTTP Modules:
+   GeoIP, FLV, Gzip Precompression, IPv6, RealIP, Stub Status, SSL, WebDAV,
+   Substitution
+ Third Party Modules:
+   Passenger 1.8
+
+Package: nginx-passenger1.9.1
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, nginx-common (= ${source:Version}),
+  passenger1.9.1 (>= 3.0.18), passenger1.9.1 (<< 3.0.19)
+Provides: httpd, nginx
+Conflicts: nginx-min, nginx-full, nginx-passenger1.8
+Description: Installs nginx-full with support for Passenger on Ruby 1.9.1
+ Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
+ the open-source community. This server can be used as standalone HTTP server
+ and as a reverse proxy server before some Apache or another big server to
+ reduce load to backend servers by many concurrent HTTP-sessions.
+ .
+ MODULES INCLUDED:
+ Standard HTTP Modules:
+   Core, Access, Auth Basic, Auto Index, Browser, Charset, Empty GIF, FastCGI,
+   Geo, Gzip, Headers, Index, Limit Requests, Limit Zone, Log, Map, Memcached,
+   Proxy, Referer, Rewrite, SCGI, Split Clients, SSI, Upstream, User ID, UWSGI,
+   X-Accel
+ Optional HTTP Modules:
+   GeoIP, FLV, Gzip Precompression, IPv6, RealIP, Stub Status, SSL, WebDAV,
+   Substitution
+ Third Party Modules:
+   Passenger 1.9.1

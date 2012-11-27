@@ -1,0 +1,2 @@
+debian/conf/* etc/nginx
+html/* usr/share/nginx/html/

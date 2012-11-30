@@ -1,3 +1,6 @@
 [submodule "debian/modules/echo"]
 	path = debian/modules/echo
 	url = git://github.com/agentzh/echo-nginx-module.git
+[submodule "debian/modules/upstream-fair"]
+	path = debian/modules/upstream-fair
+	url = git://github.com/gnosek/nginx-upstream-fair.git

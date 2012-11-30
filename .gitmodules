@@ -1,0 +1,3 @@
+[submodule "debian/modules/echo"]
+	path = debian/modules/echo
+	url = git://github.com/agentzh/echo-nginx-module.git

@@ -4,6 +4,7 @@ export DH_VERBOSE=1
 
 export DH_OPTIONS
 FLAVOURS = min full passenger1.8 passenger1.9.1
+MODULESDIR = $(CURDIR)/debian/modules
 BUILD_MIN = $(CURDIR)/debian/build-min
 BUILD_FULL = $(CURDIR)/debian/build-full
 BUILD_PASSENGER1.8 = $(CURDIR)/debian/build-passenger1.8
@@ -30,7 +31,10 @@ CONFIGURE_OPTS = --prefix=/etc/nginx \
 	--with-md5=/usr/include/openssl \
 	--without-mail_pop3_module \
 	--without-mail_imap_module \
-	--without-mail_smtp_module
+	--without-mail_smtp_module \
+	--add-module=$(MODULESDIR)/echo \
+	--add-module=$(MODULESDIR)/upstream-fair \
+	--add-module=$(MODULESDIR)/headers-more
 
 %:
 	dh $@

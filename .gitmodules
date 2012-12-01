@@ -4,3 +4,6 @@
 [submodule "debian/modules/upstream-fair"]
 	path = debian/modules/upstream-fair
 	url = git://github.com/gnosek/nginx-upstream-fair.git
+[submodule "debian/modules/headers-more"]
+	path = debian/modules/headers-more
+	url = git://github.com/agentzh/headers-more-nginx-module.git

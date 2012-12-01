@@ -1,3 +1,14 @@
+nginx (1.3.9-vgh~quantal2) quantal; urgency=low
+
+  [ Vlad ]
+  * Import the nginx echo module.
+  * Import the nginx upstream fair module
+  * Import the nginx headers-more module
+  * Update rules file with the new modules
+  * Debian packaging files are now on GitHub
+
+ -- Vlad <vgit@vladgh.com>  Sat, 01 Dec 2012 07:33:11 -0800
+
 nginx (1.3.9-vgh~quantal1) quantal; urgency=low
 
   * New upstream release

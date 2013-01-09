@@ -15,7 +15,7 @@ Build-Depends: debhelper (>= 8.0.0),
     libperl-dev,
     libxslt1-dev,
     zlib1g-dev,
-    passenger-dev (>= 3.0.18), passenger-dev (<< 3.0.19)
+    passenger-dev (>= 3.0.19), passenger-dev (<< 3.0.20)
 Standards-Version: 3.9.3
 Homepage: http://nginx.org
 
@@ -119,7 +119,7 @@ Description: Installs nginx-full with support for Passenger (default Ruby 1.8)
 Package: nginx-passenger1.8
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, nginx-common (= ${source:Version}),
-  passenger1.8 (>= 3.0.18), passenger1.8 (<< 3.0.19)
+  passenger1.8 (>= 3.0.19), passenger1.8 (<< 3.0.20)
 Provides: httpd, nginx
 Conflicts: nginx-min, nginx-full, nginx-passenger1.9.1
 Description: Installs nginx-full with support for Passenger on Ruby 1.8
@@ -143,7 +143,7 @@ Description: Installs nginx-full with support for Passenger on Ruby 1.8
 Package: nginx-passenger1.9.1
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, nginx-common (= ${source:Version}),
-  passenger1.9.1 (>= 3.0.18), passenger1.9.1 (<< 3.0.19)
+  passenger1.9.1 (>= 3.0.19), passenger1.9.1 (<< 3.0.20)
 Provides: httpd, nginx
 Conflicts: nginx-min, nginx-full, nginx-passenger1.8
 Description: Installs nginx-full with support for Passenger on Ruby 1.9.1

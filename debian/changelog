@@ -1,3 +1,10 @@
+nginx (1.3.13-vgh~quantal1) quantal; urgency=medium
+
+  * Imported Upstream version 1.3.13
+  * Module updates
+
+ -- Vlad <vg@vladgh.com>  Mon, 04 Mar 2013 19:13:21 -0600
+
 nginx (1.3.12-vgh~quantal1) quantal; urgency=medium
 
   * Imported Upstream version 1.3.12

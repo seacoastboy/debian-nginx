@@ -1,0 +1,4 @@
+debian/modules/passenger/doc/images/*
+debian/modules/passenger/rpm/release/mock-repo/*
+debian/modules/passenger/test/*
+

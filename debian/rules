@@ -3,12 +3,11 @@
 export DH_VERBOSE=1
 
 export DH_OPTIONS
-FLAVOURS = min full passenger1.8 passenger1.9.1
+FLAVOURS = min full passenger
 MODULESDIR = $(CURDIR)/debian/modules
 BUILD_MIN = $(CURDIR)/debian/build-min
 BUILD_FULL = $(CURDIR)/debian/build-full
-BUILD_PASSENGER1.8 = $(CURDIR)/debian/build-passenger1.8
-BUILD_PASSENGER1.9.1 = $(CURDIR)/debian/build-passenger1.9.1
+BUILD_PASSENGER = $(CURDIR)/debian/build-passenger
 SOURCE = auto conf configure contrib src man html
 CONFIGURE_OPTS = --prefix=/etc/nginx \
 	--sbin-path=/usr/sbin/nginx \
@@ -46,8 +45,7 @@ override_dh_auto_configure:
 	for src in $(SOURCE) ; do \
 		cp -Pa $(CURDIR)/$$src $(BUILD_MIN)/; \
 		cp -Pa $(CURDIR)/$$src $(BUILD_FULL)/; \
-		cp -Pa $(CURDIR)/$$src $(BUILD_PASSENGER1.8)/; \
-		cp -Pa $(CURDIR)/$$src $(BUILD_PASSENGER1.9.1)/; \
+		cp -Pa $(CURDIR)/$$src $(BUILD_PASSENGER)/; \
 	done
 	cd $(BUILD_MIN) && ./configure $(CONFIGURE_OPTS)
 	cd $(BUILD_FULL) && ./configure $(CONFIGURE_OPTS) \
@@ -55,18 +53,12 @@ override_dh_auto_configure:
 		--with-http_sub_module \
 		--with-http_geoip_module \
 		--with-http_dav_module
-	cd $(BUILD_PASSENGER1.8) && ./configure $(CONFIGURE_OPTS) \
+	cd $(BUILD_PASSENGER) && ./configure $(CONFIGURE_OPTS) \
 		--with-http_flv_module \
 		--with-http_sub_module \
 		--with-http_geoip_module \
 		--with-http_dav_module \
-		--add-module=/usr/lib/phusion-passenger/ext/nginx
-	cd $(BUILD_PASSENGER1.9.1) && ./configure $(CONFIGURE_OPTS) \
-		--with-http_flv_module \
-		--with-http_sub_module \
-		--with-http_geoip_module \
-		--with-http_dav_module \
-		--add-module=/usr/lib/phusion-passenger/ext/nginx
+		--add-module=$(MODULESDIR)/passenger/ext/nginx
 override_dh_auto_build:
 	for flavour in $(FLAVOURS) ; do \
 		cd $(CURDIR)/debian/build-$$flavour && make; \

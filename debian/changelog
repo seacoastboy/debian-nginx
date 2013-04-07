@@ -1,3 +1,9 @@
+nginx (1.3.15-vgh~quantal3) quantal; urgency=high
+
+  * Update dependencies
+
+ -- Vlad <vg@vladgh.com>  Sun, 07 Apr 2013 13:30:49 -0500
+
 nginx (1.3.15-vgh~quantal2) quantal; urgency=high
 
   * Changed to the new ruby-passenger dependency

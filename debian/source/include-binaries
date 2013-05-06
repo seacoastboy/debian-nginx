@@ -43,15 +43,15 @@ debian/modules/passenger/test/stub/rails3.2/app/assets/images/rails.png
 debian/modules/passenger/test/stub/rails_apps/2.2/empty/public/images/rails.png
 debian/modules/passenger/test/stub/rails_apps/1.2/empty/public/images/rails.png
 debian/modules/passenger/test/stub/rails_apps/2.0/empty/public/images/rails.png
-dpkg-source: error: unwanted binary file: debian/modules/passenger/test/stub/rails_apps/2.3/mycook/public/images/cookbook.gif
-dpkg-source: error: unwanted binary file: debian/modules/passenger/test/stub/rails_apps/2.3/mycook/public/images/rails.png
-dpkg-source: error: unwanted binary file: debian/modules/passenger/test/stub/rails_apps/2.3/mycook/public/images/header.png
-dpkg-source: error: unwanted binary file: debian/modules/passenger/test/stub/rails_apps/2.3/mycook/public/images/angrywizard.gif
-dpkg-source: error: unwanted binary file: debian/modules/passenger/test/stub/rails_apps/2.3/empty/public/images/rails.png
-dpkg-source: error: unwanted binary file: debian/modules/passenger/test/stub/rack/public/rack.jpg
-dpkg-source: error: unwanted binary file: debian/modules/passenger/test/stub/zsfa/header.png
-dpkg-source: error: unwanted binary file: debian/modules/passenger/test/stub/zsfa/zsfa.png
-dpkg-source: error: unwanted binary file: debian/modules/passenger/test/stub/rails3.1/app/assets/images/rails.png
-dpkg-source: error: unwanted binary file: debian/modules/passenger/rpm/release/mock-repo/rubygem-spruz-0.2.2-1.noarch.rpm
-dpkg-source: error: unwanted binary file: debian/modules/passenger/rpm/release/mock-repo/rubygem-file-tail-1.0.5-1.noarch.rpm
-dpkg-source: error: unwanted binary file: debian/modules/passenger/rpm/release/mock-repo/rubygem-daemon_controller-0.2.5-1.noarch.rpm
+debian/modules/passenger/test/stub/rails_apps/2.3/mycook/public/images/cookbook.gif
+debian/modules/passenger/test/stub/rails_apps/2.3/mycook/public/images/rails.png
+debian/modules/passenger/test/stub/rails_apps/2.3/mycook/public/images/header.png
+debian/modules/passenger/test/stub/rails_apps/2.3/mycook/public/images/angrywizard.gif
+debian/modules/passenger/test/stub/rails_apps/2.3/empty/public/images/rails.png
+debian/modules/passenger/test/stub/rack/public/rack.jpg
+debian/modules/passenger/test/stub/zsfa/header.png
+debian/modules/passenger/test/stub/zsfa/zsfa.png
+debian/modules/passenger/test/stub/rails3.1/app/assets/images/rails.png
+debian/modules/passenger/rpm/release/mock-repo/rubygem-spruz-0.2.2-1.noarch.rpm
+debian/modules/passenger/rpm/release/mock-repo/rubygem-file-tail-1.0.5-1.noarch.rpm
+debian/modules/passenger/rpm/release/mock-repo/rubygem-daemon_controller-0.2.5-1.noarch.rpm

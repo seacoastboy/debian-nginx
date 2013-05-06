@@ -59,7 +59,7 @@ Package: nginx-min
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, nginx-common (= ${source:Version})
 Provides: httpd, nginx
-Conflicts: nginx-full, nginx-passenger, nginx-passenger1.8, nginx-passenger1.9.1
+Conflicts: nginx-full, nginx-passenger
 Description: Installs NginX with a minimum set of core modules
  Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
  the open-source community. This server can be used as standalone HTTP server
@@ -99,7 +99,7 @@ Description: Installs NginX with the full set of core modules
 Package: nginx-passenger
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, nginx-common (= ${source:Version}),
- ruby-passenger (>= 3.0.19), ruby-passenger (<< 3.0.20)
+ ruby-passenger (>= 4.0.1), ruby-passenger (<< 4.0.2)
 Provides: httpd, nginx
 Conflicts: nginx-min, nginx-full
 Description: Installs nginx-full with support for Passenger (default Ruby 1.8)

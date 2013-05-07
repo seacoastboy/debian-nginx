@@ -1,4 +1,4 @@
-nginx (1.5.0-vgh~precise~ppa1) precise; urgency=high
+nginx (1.5.0-vgh~quantal~ppa1) quantal; urgency=high
 
   * Imported Upstream version 1.5.0
   * Changed versioning

@@ -1,3 +1,9 @@
+nginx (1.5.0-vgh1~ppa2) raring; urgency=high
+
+  * Rename min flavour to light
+
+ -- Vlad <vg@vladgh.com>  Sat, 11 May 2013 16:32:06 -0500
+
 nginx (1.5.0-vgh1~ppa1) raring; urgency=high
 
   * Passenger update

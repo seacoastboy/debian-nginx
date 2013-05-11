@@ -3,9 +3,9 @@
 export DH_VERBOSE=1
 
 export DH_OPTIONS
-FLAVOURS = min full passenger
+FLAVOURS = light full passenger
 MODULESDIR = $(CURDIR)/debian/modules
-BUILD_MIN = $(CURDIR)/debian/build-min
+BUILD_LIGHT = $(CURDIR)/debian/build-light
 BUILD_FULL = $(CURDIR)/debian/build-full
 BUILD_PASSENGER = $(CURDIR)/debian/build-passenger
 SOURCE = auto conf configure contrib src man html
@@ -43,11 +43,11 @@ override_dh_auto_configure:
 		install -d $(CURDIR)/debian/build-$$flavour; \
 	done
 	for src in $(SOURCE) ; do \
-		cp -Pa $(CURDIR)/$$src $(BUILD_MIN)/; \
+		cp -Pa $(CURDIR)/$$src $(BUILD_LIGHT)/; \
 		cp -Pa $(CURDIR)/$$src $(BUILD_FULL)/; \
 		cp -Pa $(CURDIR)/$$src $(BUILD_PASSENGER)/; \
 	done
-	cd $(BUILD_MIN) && ./configure $(CONFIGURE_OPTS)
+	cd $(BUILD_LIGHT) && ./configure $(CONFIGURE_OPTS)
 	cd $(BUILD_FULL) && ./configure $(CONFIGURE_OPTS) \
 		--with-http_flv_module \
 		--with-http_sub_module \

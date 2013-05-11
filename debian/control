@@ -99,7 +99,7 @@ Description: Installs NginX with the full set of core modules
 Package: nginx-passenger
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, nginx-common (= ${source:Version}),
- ruby-passenger (>= 4.0.1), ruby-passenger (<< 4.0.2)
+ ruby-passenger (>= 4.0.2), ruby-passenger (<< 4.0.3)
 Provides: httpd, nginx
 Conflicts: nginx-light, nginx-full
 Description: Installs nginx-full with support for Passenger (default Ruby 1.8)

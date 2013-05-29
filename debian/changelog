@@ -1,3 +1,9 @@
+nginx (1.5.0-vgh1~ppa6) raring; urgency=high
+
+  * Module updates
+
+ -- Vlad <vg@vladgh.com>  Wed, 29 May 2013 07:46:22 -0700
+
 nginx (1.5.0-vgh1~ppa5) raring; urgency=high
 
   * Update passenger package version 

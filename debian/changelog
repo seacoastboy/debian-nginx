@@ -1,3 +1,9 @@
+nginx (1.5.1-vgh~ppa1) raring; urgency=high
+
+  * Imported Upstream version 1.5.1
+
+ -- Vlad <vg@vladgh.com>  Wed, 05 Jun 2013 08:36:07 -0700
+
 nginx (1.5.0-vgh1~ppa7) raring; urgency=high
 
   * Recompiled against Passenger 4.0.5 

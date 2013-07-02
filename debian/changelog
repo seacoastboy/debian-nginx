@@ -1,3 +1,10 @@
+nginx (1.5.2-vgh~ppa1) raring; urgency=high
+
+  * Imported Upstream version 1.5.2
+  * Module updates
+
+ -- Vlad <vg@vladgh.com>  Tue, 02 Jul 2013 09:16:06 -0500
+
 nginx (1.5.1-vgh~ppa1) raring; urgency=high
 
   * Imported Upstream version 1.5.1

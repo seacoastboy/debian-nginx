@@ -17,7 +17,7 @@ Build-Depends: debhelper (>= 8.0.0),
     libperl-dev,
     libxslt1-dev,
     zlib1g-dev,
-    ruby-passenger-dev (>= 1:4.0.7), ruby-passenger-dev (<< 1:4.0.8)
+    ruby-passenger-dev (>= 4.0.7), ruby-passenger-dev (<< 4.0.8)
 Standards-Version: 3.9.4
 Homepage: http://nginx.org
 

@@ -1,3 +1,9 @@
+nginx (1.5.2-vgh~ppa4) raring; urgency=high
+
+  * Fix passenger source path
+
+ -- Vlad <vg@vladgh.com>  Fri, 05 Jul 2013 15:03:56 -0500
+
 nginx (1.5.2-vgh~ppa3) raring; urgency=high
 
   * Minor fix

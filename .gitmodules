@@ -7,6 +7,4 @@
 [submodule "debian/modules/headers-more"]
 	path = debian/modules/headers-more
 	url = git://github.com/agentzh/headers-more-nginx-module.git
-[submodule "debian/modules/passenger"]
-	path = debian/modules/passenger
-	url = git://github.com/FooBarWidget/passenger.git
+

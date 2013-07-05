@@ -1,3 +1,9 @@
+nginx (1.5.2-vgh~ppa2) raring; urgency=high
+
+  * Passenger upstream release
+
+ -- Vlad <vg@vladgh.com>  Fri, 05 Jul 2013 14:15:55 -0500
+
 nginx (1.5.2-vgh~ppa1) raring; urgency=high
 
   * Imported Upstream version 1.5.2
@@ -13,7 +19,7 @@ nginx (1.5.1-vgh~ppa1) raring; urgency=high
 
 nginx (1.5.0-vgh1~ppa7) raring; urgency=high
 
-  * Recompiled against Passenger 4.0.5 
+  * Recompiled against Passenger 4.0.5
 
  -- Vlad <vg@vladgh.com>  Sat, 01 Jun 2013 07:29:28 -0700
 
@@ -25,7 +31,7 @@ nginx (1.5.0-vgh1~ppa6) raring; urgency=high
 
 nginx (1.5.0-vgh1~ppa5) raring; urgency=high
 
-  * Update passenger package version 
+  * Update passenger package version
 
  -- Vlad <vg@vladgh.com>  Tue, 28 May 2013 08:14:34 -0700
 
